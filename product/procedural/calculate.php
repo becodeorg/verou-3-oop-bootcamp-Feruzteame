@@ -1,7 +1,7 @@
 <?php
 
-include_once './products.php';
-include_once './helper.php';
+include_once '../products.php';
+include_once '../helper.php';
 
 $array_item_price = [];
 
