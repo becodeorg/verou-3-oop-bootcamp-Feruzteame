@@ -15,13 +15,7 @@ class Calculate
     {
         if (isset($products)) {
             foreach ($products as $product) {
-                $price = $product->price;
-                if ($product->type === "fruit") {
-                    $after_discount = $price - ($price * 0.6);
-                } else {
-                    $after_discount = $price - ($price * 0.21);
-                }
-                $this->prices[] = $after_discount;
+                $this->prices[] = getPrice($product);
             }
         }
     }
